@@ -56,7 +56,7 @@ Users can interact via a **chatbot**, visualize insights, and receive predictive
 
 ## 🛠 Modules & Architecture
 
-```mermaid
+
 graph TD
     A[Datasets (CSV, Excel, JSON, SQL)] --> B[SLM-Based Analytics Module]
     B --> C[EDA & Insights]
