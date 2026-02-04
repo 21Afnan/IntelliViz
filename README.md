@@ -141,13 +141,13 @@ We’d love to hear from you! Whether you have questions, feedback, or want to *
 </tr>
 <tr>
 <td align="center">
-  <a href="https://www.linkedin.com/in/dure-adan-noor" target="_blank">
+  <a href="https://www.linkedin.com/in/dure-adan-noor-29b01b2b5" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-Dure-blue?style=for-the-badge&logo=linkedin" alt="Dure LinkedIn"/>
   </a>
   <br>Dure Addan Noor
 </td>
 <td align="center">
-  <a href="mailto:dure@example.com">
+  <a href="mailto:dureadannooor@gmail.com">
     <img src="https://img.shields.io/badge/Email-Dure-c14438?style=for-the-badge&logo=gmail" alt="Dure Email"/>
   </a>
 </td>
