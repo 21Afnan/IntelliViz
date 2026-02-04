@@ -8,20 +8,20 @@
   />
 </p>
 
-<!-- TYPING TAGLINE -->
+<!-- AGENTIC TYPING -->
 <div align="center">
   <img
-    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=22&duration=3000&pause=900&color=FF69B4&center=true&vCenter=true&width=900&lines=Agentic+Data+Analysis+Platform;Single+LLM+Commercial+MVP;Upload+CSV+→+Insights+→+Dashboard+→+Chat"
-    alt="Typing animation"
+    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=22&duration=2500&pause=600&color=FF69B4&center=true&vCenter=true&width=950&lines=🧠+Single+LLM+Thinking...;🧭+Routing+Tasks+to+Agents...;📊+Analyzing+Data...;📈+Generating+Visuals...;💡+Extracting+Insights...;💬+Ready+to+Chat"
+    alt="Agentic typing animation"
   />
 </div>
 
 <!-- BADGES -->
 <p align="center">
   <img src="https://img.shields.io/badge/Phase-A-FF69B4?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/LLM-Single%20Brain-FF77A9?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Status-Active%20Development-FFA6C9?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/License-MIT-FFD6E5?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Architecture-Agentic-FF77A9?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/LLM-Single%20Brain-FFA6C9?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Building-FFD6E5?style=for-the-badge" />
 </p>
 
 <!-- DIVIDER -->
@@ -31,52 +31,75 @@
 
 ## 🚀 What is IntelliViz?
 
-**IntelliViz (Phase A)** is a **commercial-ready MVP** for automated data analysis and visualization.
+**IntelliViz (Phase A)** is an **agentic data analysis platform**.
 
-Upload a CSV and IntelliViz behaves like a **team of analysts**, powered by **one LLM**:
+You upload a CSV.  
+A **single LLM thinks like a team**.
 
-- 🧹 Automatic preprocessing  
-- 📊 Exploratory Data Analysis (EDA)  
-- 📈 Interactive visualizations  
-- 💡 Human-readable insights  
-- 💬 Chat interface to explore results  
+It decides:
+- *How to clean the data*
+- *What statistics matter*
+- *Which charts explain the story*
+- *What insights a human would care about*
 
-<p align="center">✨ <i>LLM decides. Backend executes. Dashboard explains.</i> ✨</p>
+<p align="center">
+✨ <b>LLM reasons → Backend executes → Dashboard communicates</b> ✨
+</p>
 
 ---
 
-## 🧠 Architecture Overview
+## 🧠 Agentic System (Visual Mental Model)
 
-CSV Upload
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ashishpatel26/agentic-ai-diagrams/main/agent-routing.gif" width="80%" alt="Agent routing animation (placeholder)" />
+</p>
+```bash
+User Intent
 ↓
-Supabase (Full Dataset Storage)
-↓
-Orchestrator (Single LLM)
+🧠 Orchestrator (Single LLM)
 ↓
 ┌──────────┬──────────┬────────────┬────────────┐
-│ Data │ EDA │ Viz │ Insight │
+│ 🧹 Data │ 📊 EDA │ 📈 Viz │ 💡 Insight │
 │ Agent │ Agent │ Agent │ Agent │
 └──────────┴──────────┴────────────┴────────────┘
 ↓
-Backend (Pandas / Plotly)
+⚙️ Backend Execution (Pandas / Plotly)
 ↓
-Streamlit Dashboard + Chat
+📊 Dashboard + 💬 Chat
 
 
+> The LLM **never touches raw rows** — it only reasons over schema, samples, and stats.
+```
 ---
 
-## 🧠 Agentic Design (Single LLM)
+## 🤖 Agents in Action
 
-| Agent | Responsibility |
-|-----|----------------|
-| 🧭 Orchestrator | Understands intent & routes tasks |
-| 🧹 Data Agent | Decides preprocessing steps |
-| 📊 EDA Agent | Chooses statistics & correlations |
-| 📈 Viz Agent | Recommends chart types |
-| 💡 Insight Agent | Converts numbers into insights |
-| 💬 Chat Agent | Answers questions from stored outputs |
+<div align="center">
+```bash
+| Agent | Animation | Responsibility |
+|------|-----------|----------------|
+| 🧭 Orchestrator | 🔁 Thinking | Routes tasks & intent |
+| 🧹 Data Agent | 🧼 Cleaning | Missing values, scaling |
+| 📊 EDA Agent | 📐 Measuring | Stats, correlations |
+| 📈 Viz Agent | 🎨 Designing | Chart selection |
+| 💡 Insight Agent | 💭 Explaining | Human-readable insights |
+| 💬 Chat Agent | 🗣️ Conversing | Answers questions |
 
-> ⚠️ The LLM **never touches raw data** — only schema, samples, and statistics.
+</div>
+```
+---
+
+## 🔄 End-to-End Flow (Animated Concept)
+
+<p align="center">
+  <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="70%" alt="Processing animation placeholder"/>
+</p>
+
+1️⃣ Upload CSV  
+2️⃣ LLM reasons about the dataset  
+3️⃣ Backend executes transformations  
+4️⃣ Charts & insights are generated  
+5️⃣ Chat explores the results  
 
 ---
 
@@ -94,71 +117,56 @@ Streamlit Dashboard + Chat
 ---
 
 ## 📁 Repository Structure
-
-
-
+```bash
 intelliviz-core/
 │
 ├── backend/
 │ ├── app/
-│ │ ├── api/ # Upload, query, chat endpoints
-│ │ ├── agents/ # Orchestrator + agent roles
-│ │ ├── preprocessing/ # Data cleaning logic
-│ │ ├── eda/ # Statistics & correlations
-│ │ ├── visualization/ # Plotly chart builders
-│ │ ├── core/ # Config & DB
+│ │ ├── api/ # Upload, query, chat
+│ │ ├── agents/ # Orchestrator + roles
+│ │ ├── preprocessing/ # Data cleaning
+│ │ ├── eda/ # Statistics
+│ │ ├── visualization/ # Charts
 │ │ └── main.py
 │
 ├── frontend/
 │ └── streamlit_app.py
 │
-├── llm/
-│ └── prompts/ # Prompt templates per agent
-│
+├── llm/prompts/
 ├── docker/
-├── requirements.txt
 └── README.md
 
+```
+---
+
+## 🧪 Try It Like a User
+
+💬 Ask things like:
+- *“What stands out in this dataset?”*
+- *“Are there anomalies?”*
+- *“Which features matter most?”*
+
+The system **answers like an analyst**, not a chatbot.
 
 ---
 
-## 🧪 Demo Workflow
+## 🗓️ Phase A — 1 Week Sprint
 
-1. Upload a CSV file  
-2. Click **Analyze Dataset**  
-3. Explore interactive charts & filters  
-4. Ask questions in chat:
-   - “What trends stand out?”
-   - “Any anomalies?”
-   - “Which features matter most?”
-
----
-
-## 🗓️ Phase A — 1 Week Plan
-
-| Day | Output |
-|---|---|
-| 1 | Infra + DB + LLM setup |
-| 2 | CSV upload & storage |
-| 3 | Preprocessing agent |
-| 4 | EDA + insight agent |
-| 5 | Visualization & dashboard |
+| Day | Focus |
+|----|------|
+| 1 | Infra + LLM |
+| 2 | CSV upload |
+| 3 | Data agent |
+| 4 | EDA + insights |
+| 5 | Visuals |
 | 6 | Orchestrator + chat |
-| 7 | Polish & demo |
+| 7 | Demo polish |
 
 ---
 
-## 🔮 Phase B (Next)
-
-- Multi-dataset joins  
-- Saved dashboards  
-- Vector search over insights  
-- Multi-LLM routing  
-- Scheduled re-analysis  
-
----
-
-<p align="center">💗 Built for speed. Designed for clarity. Ready for production.</p>
+<p align="center">
+💗 <b>Agentic by design. Minimal by necessity. Built to scale.</b>
+</p>
 
 <!-- FOOTER -->
 <p align="center">
