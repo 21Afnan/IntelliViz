@@ -1,29 +1,37 @@
 <p align="center">
-  <img src="https://via.placeholder.com/800x250.png?text=IntelliViz+%F0%9F%9A%80+Data+Analytics+%26+IoT+Monitoring" alt="IntelliViz Banner"/>
+  <img src="https://via.placeholder.com/900x250.png?text=✨+IntelliViz+%F0%9F%9A%80+Autonomous+Analytics+%26+IoT+Monitoring" alt="IntelliViz Banner"/>
 </p>
 
 # IntelliViz 🚀  
 **Autonomous Data Analytics & IoT Anomaly Detection Platform**
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue) 
-![PyTorch](https://img.shields.io/badge/PyTorch-✓-orange) 
-![Streamlit](https://img.shields.io/badge/Streamlit-✓-red) 
-![MIT License](https://img.shields.io/badge/License-MIT-green)
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge) 
+![PyTorch](https://img.shields.io/badge/PyTorch-✓-orange?style=for-the-badge) 
+![TensorFlow](https://img.shields.io/badge/TensorFlow-✓-orange?style=for-the-badge) 
+![LangChain](https://img.shields.io/badge/LangChain-✓-purple?style=for-the-badge) 
+![Supabase](https://img.shields.io/badge/Supabase-✓-green?style=for-the-badge) 
+![Streamlit](https://img.shields.io/badge/Streamlit-✓-red?style=for-the-badge) 
+![MIT License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 ---
 
 ## 🌟 Project Overview
-IntelliViz is an **agentic analytics platform** combining:  
+IntelliViz is an **agentic, AI-powered analytics platform** combining:  
 
-1. **SLM-Based General Analytics Module** – analyze **any dataset** autonomously.  
-2. **IoT Monitoring & Cybersecurity Module** – monitor sensors and networks in **real-time**.  
+1. **SLM-Based General Analytics Module** – autonomously analyze **any dataset** (CSV, Excel, JSON, SQL).  
+2. **IoT Monitoring & Cybersecurity Module** – monitor sensors, devices, and networks in **real-time**.  
+3. **LangChain Agentic AI** – interact via **chatbot interface** for queries, insights, and automation.  
+4. **Supabase Backend** – secure, cloud-hosted database for logs, dashboards, and alerts.  
 
-Users can interact via a **chatbot**, visualize insights, and receive predictive alerts without manual intervention.  
+Users can **visualize insights, detect anomalies, and receive predictive alerts** with minimal human intervention.
+
+---
 
 <p align="center">
-  <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" width="700" alt="Dashboard Animation"/>
+  <img src="https://media.giphy.com/media/l41lFw057lAJQMwg0/giphy.gif" width="700" alt="Interactive Analytics Dashboard"/>
 </p>
 
+---
 ---
 
 ## 🔥 Features
