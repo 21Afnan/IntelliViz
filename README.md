@@ -131,7 +131,7 @@ We’d love to hear from you! Whether you have questions, feedback, or want to *
 </tr>
 <tr>
 <td align="center">
-  <a href="https://www.linkedin.com/in/usama-shahid" target="_blank">
+  <a href="https://www.linkedin.com/in/usamashahid" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-Usama-blue?style=for-the-badge&logo=linkedin" alt="Usama LinkedIn"/>
   </a>
   <br>Usama Shahid
@@ -144,7 +144,7 @@ We’d love to hear from you! Whether you have questions, feedback, or want to *
 </tr>
 <tr>
 <td align="center">
-  <a href="https://www.linkedin.com/in/dure-noor" target="_blank">
+  <a href="https://www.linkedin.com/in/dure-adan-noor" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-Dure-blue?style=for-the-badge&logo=linkedin" alt="Dure LinkedIn"/>
   </a>
   <br>Dure Addan Noor
