@@ -128,13 +128,13 @@ We’d love to hear from you! Whether you have questions, feedback, or want to *
 </tr>
 <tr>
 <td align="center">
-  <a href="https://www.linkedin.com/in/usamashahid" target="_blank">
+  <a href="https://www.linkedin.com/in/-usamashahid" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-Usama-blue?style=for-the-badge&logo=linkedin" alt="Usama LinkedIn"/>
   </a>
   <br>Usama Shahid
 </td>
 <td align="center">
-  <a href="mailto:usama@example.com">
+  <a href="mailto:shaikhusama541@gmail.com">
     <img src="https://img.shields.io/badge/Email-Usama-c14438?style=for-the-badge&logo=gmail" alt="Usama Email"/>
   </a>
 </td>
