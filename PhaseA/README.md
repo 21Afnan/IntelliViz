@@ -55,20 +55,14 @@ It decides:
 </p>
 ```bash
 User Intent
-↓
-🧠 Orchestrator (Single LLM)
-↓
-┌──────────┬──────────┬────────────┬────────────┐
-│ 🧹 Data │ 📊 EDA │ 📈 Viz │ 💡 Insight │
-│ Agent │ Agent │ Agent │ Agent │
-└──────────┴──────────┴────────────┴────────────┘
-↓
-⚙️ Backend Execution (Pandas / Plotly)
-↓
+    ↓
+🧠 Orchestrator (thinking…)
+    ↓
+[ 🧹 Data ] → [ 📊 EDA ] → [ 📈 Viz ] → [ 💡 Insight ]
+    ↓
+⚙️ Backend Execution
+    ↓
 📊 Dashboard + 💬 Chat
-
-
-> The LLM **never touches raw rows** — it only reasons over schema, samples, and stats.
 ```
 ---
 
