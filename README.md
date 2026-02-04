@@ -1,10 +1,3 @@
-<p align="center">
-  <img src="assets/banner.gif" alt="IntelliViz Banner" width="900"/>
-</p>
-
-<p align="center">
-  <img src="assets/dashboard.gif" width="700" alt="Interactive Dashboard"/>
-</p>
 
 
 # IntelliViz 🚀  
