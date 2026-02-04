@@ -9,12 +9,14 @@
 </p>
 
 <!-- AGENTIC TYPING -->
+<!-- AGENTIC TYPING ANIMATION -->
 <div align="center">
   <img
-    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=22&duration=2500&pause=600&color=FF69B4&center=true&vCenter=true&width=950&lines=🧠+Single+LLM+Thinking...;🧭+Routing+Tasks+to+Agents...;📊+Analyzing+Data...;📈+Generating+Visuals...;💡+Extracting+Insights...;💬+Ready+to+Chat"
+    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=22&duration=2200&pause=700&color=FF69B4&center=true&vCenter=true&width=950&lines=🧠+Understanding+user+intent...;🧭+Routing+tasks+to+agents...;🧹+Cleaning+and+preprocessing+data...;📊+Running+EDA+and+correlations...;📈+Designing+visualizations...;💡+Generating+human+insights...;💬+Ready+to+chat"
     alt="Agentic typing animation"
   />
 </div>
+
 
 <!-- BADGES -->
 <p align="center">
@@ -63,8 +65,9 @@ User Intent
 ⚙️ Backend Execution
     ↓
 📊 Dashboard + 💬 Chat
-```
+
 ---
+```
 ## 🤖 Agents in Action
 ```bash
 
@@ -80,9 +83,9 @@ User Intent
 | 💬 Chat Agent | 🗣️ Conversing | Answers questions |
 
 </div>
-```
----
 
+---
+```
 ## 🔄 End-to-End Flow (Animated Concept)
 
 <p align="center">
