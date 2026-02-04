@@ -8,16 +8,6 @@
   />
 </p>
 
-<!-- AGENTIC TYPING -->
-<!-- AGENTIC TYPING ANIMATION -->
-<div align="center">
-  <img
-    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=22&duration=2200&pause=700&color=FF69B4&center=true&vCenter=true&width=950&lines=🧠+Understanding+user+intent...;🧭+Routing+tasks+to+agents...;🧹+Cleaning+and+preprocessing+data...;📊+Running+EDA+and+correlations...;📈+Designing+visualizations...;💡+Generating+human+insights...;💬+Ready+to+chat"
-    alt="Agentic typing animation"
-  />
-</div>
-
-
 <!-- BADGES -->
 <p align="center">
   <img src="https://img.shields.io/badge/Phase-A-FF69B4?style=for-the-badge" />
@@ -71,7 +61,7 @@ User Intent
 ## 🤖 Agents in Action
 ```bash
 
-<div align="center">
+<
 
 | Agent | Animation | Responsibility |
 |------|-----------|----------------|
@@ -82,15 +72,11 @@ User Intent
 | 💡 Insight Agent | 💭 Explaining | Human-readable insights |
 | 💬 Chat Agent | 🗣️ Conversing | Answers questions |
 
-</div>
+
 
 ---
 ```
 ## 🔄 End-to-End Flow (Animated Concept)
-
-<p align="center">
-  <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="70%" alt="Processing animation placeholder"/>
-</p>
 
 1️⃣ Upload CSV  
 2️⃣ LLM reasons about the dataset  
