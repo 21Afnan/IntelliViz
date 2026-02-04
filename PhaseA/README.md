@@ -42,10 +42,6 @@ It decides:
 
 ## 🧠 Agentic System (Visual Mental Model)
 ```bash
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ashishpatel26/agentic-ai-diagrams/main/agent-routing.gif" width="80%" alt="Agent routing animation (placeholder)" />
-</p>
-
 User Intent
     ↓
 🧠 Orchestrator (thinking…)
