@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="https://media.giphy.com/media/3o7TKP5f8NW9JUvU6Q/giphy.gif" width="700" alt="Interactive Dashboard"/>
+</p>
 
 
 # IntelliViz 🚀  
