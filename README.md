@@ -1,6 +1,11 @@
 <p align="center">
-  <img src="https://via.placeholder.com/900x250.png?text=✨+IntelliViz+%F0%9F%9A%80+Autonomous+Analytics+%26+IoT+Monitoring" alt="IntelliViz Banner"/>
+  <img src="assets/banner.gif" alt="IntelliViz Banner" width="900"/>
 </p>
+
+<p align="center">
+  <img src="assets/dashboard.gif" width="700" alt="Interactive Dashboard"/>
+</p>
+
 
 # IntelliViz 🚀  
 **Autonomous Data Analytics & IoT Anomaly Detection Platform**
@@ -110,13 +115,6 @@ graph TD
 
 ---
 
-## 🌱 Alignment with SDGs
-
-| SDG Goal | Relevance |
-|----------|-----------|
-| **Goal 9: Industry, Innovation & Infrastructure** | Supports industrial IoT and automation. |
-| **Goal 11: Sustainable Cities & Communities** | Enables smart building and city monitoring. |
-| **Goal 12: Responsible Consumption & Production** | Optimizes resources, reduces waste through predictive insights. |
 ## 💬 Contact & Collaborate
 
 We’d love to hear from you! Whether you have questions, feedback, or want to **collaborate on IntelliViz**, reach out to us.  
@@ -178,9 +176,3 @@ We are building **autonomous, intelligent analytics and IoT solutions**, and we 
 
 ---
 
-### ✨ Animated Contact Showcase
-You can add small GIFs for an interactive effect like this:
-
-![Contact GIF](https://media.giphy.com/media/26BRuo6sLetdllPAQ/giphy.gif)
-
-> Use GIFs to make the contact section dynamic and visually attractive.
