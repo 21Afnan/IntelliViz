@@ -49,11 +49,11 @@ It decides:
 ---
 
 ## 🧠 Agentic System (Visual Mental Model)
-
+```bash
 <p align="center">
   <img src="https://raw.githubusercontent.com/ashishpatel26/agentic-ai-diagrams/main/agent-routing.gif" width="80%" alt="Agent routing animation (placeholder)" />
 </p>
-```bash
+
 User Intent
     ↓
 🧠 Orchestrator (thinking…)
@@ -65,11 +65,11 @@ User Intent
 📊 Dashboard + 💬 Chat
 ```
 ---
-
 ## 🤖 Agents in Action
+```bash
 
 <div align="center">
-```bash
+
 | Agent | Animation | Responsibility |
 |------|-----------|----------------|
 | 🧭 Orchestrator | 🔁 Thinking | Routes tasks & intent |
