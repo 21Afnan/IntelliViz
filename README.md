@@ -1,141 +1,109 @@
-# IntelliViz-Core
+# IntelliViz: Autonomous Data Analytics & Anomaly Detection Platform
 
-**Autonomous Data Analytics and Real-Time IoT Cybersecurity Monitoring Platform**  
-Powered by a single Small Language Model (SLM) and an agentic system, IntelliViz enables organizations to upload any structured dataset (CSV), automatically preprocess it, generate EDA and insights, and visualize results in a fully interactive dashboard with natural language chat support.  
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
-This repository contains the **Phase A MVP**: the core platform for data ingestion, SLM-driven analysis, EDA, insight generation, and clickable dashboards.
+## Project Overview
+**IntelliViz** is an autonomous data analytics and anomaly detection platform designed for real-world applications. It allows users to **upload datasets**, **analyze them automatically**, **generate interactive insights**, and **visualize results** through a **clickable dashboard**.  
 
----
-
-## 🚀 Project Overview
-
-IntelliViz is designed to be a **commercial-grade SaaS platform** that:
-
-- Works with **any structured dataset** (IoT, business, logs, industrial sensors, etc.)  
-- Uses a **single SLM as the brain**, orchestrating multiple agent roles via prompt engineering  
-- Automates **preprocessing, EDA, visualization, and insight generation**  
-- Provides a **clickable dashboard** with filters, drill-down, and natural language querying  
-- Stores the **full dataset and processed results** in a database (Supabase)  
-
-**Phase A** demonstrates the **core platform MVP**.
+This project is built with **commercial scalability in mind** while also serving as a Final Year Project. It demonstrates a **domain-agnostic SLM-powered analytics engine** integrated with **interactive visualization and chat-based insights**, ready for industrial, business, and IoT applications.
 
 ---
 
-## 📌 Phase A Scope (Core Platform)
+## 🔍 Features
 
-**Objective:** Build a working MVP in 1 week that allows:
-
-1. CSV upload and storage in Supabase  
-2. SLM-based agentic system for:
-   - Preprocessing decisions
-   - EDA and statistical summaries
-   - Chart suggestions and visualization layout
-   - Insight generation in text  
-3. Backend execution of all data operations (Pandas / Plotly)  
-4. Interactive dashboard (Streamlit + Plotly)  
-5. Natural language chat interface on insights and dashboard  
-6. Full dataset storage (no metadata-only approach)  
-
-**Outcome:** A fully functional, end-to-end pipeline for structured data analysis and visualization, ready for testing and future commercial scaling.
+- **Upload & Store Datasets:** Upload CSV files; full datasets stored for processing.
+- **Autonomous Preprocessing:** Missing value handling, normalization, and cleaning.
+- **Exploratory Data Analysis (EDA):** Automatic generation of statistics, correlations, and trends.
+- **Insight Generation:** Natural-language explanations of data patterns and anomalies.
+- **Interactive Dashboard:** Clickable, filterable charts built with Plotly & Streamlit.
+- **Chat Interface:** Ask questions about your data and insights naturally.
+- **Agentic Architecture:** One SLM acts as multiple agents — orchestrator, data agent, EDA agent, visualization agent, insight agent, and chat agent.
 
 ---
 
-## 🧩 Architecture Overview
----
-```bash
-User Uploads CSV
-↓
-Data Ingestion Service (FastAPI)
-↓
-Store Full Dataset in Supabase
-↓
-User Prompt (Natural Language)
-↓
-Orchestrator Agent (SLM)
-↓
-┌───────────────┬───────────────┐
-| Data Agent | EDA Agent |
-└───────────────┴───────────────┘
-↓
-Insight Agent → Text Summaries
-Visualization Agent → Chart Config (Plotly)
-↓
-Store Processed Data + EDA + Insights
-↓
-Interactive Dashboard + Chat Interface (Streamlit)
----
-```
----
+## 🎯 Phase A (Core Platform) Roadmap
 
-## 🧠 Agent Roles (Single SLM, Multiple Tasks)
-```bash
+**Goal:** Build a fully functional MVP with a **single LLM** as the brain.
 
-| Agent Role           | Responsibility                                                                 |
-|---------------------|-------------------------------------------------------------------------------|
-| **Orchestrator**     | Receives user prompt and routes tasks to other agents                          |
-| **Data Agent**       | Decides preprocessing steps (missing values, normalization, etc.)             |
-| **EDA Agent**        | Generates statistical summaries, correlations, top features                   |
-| **Visualization Agent** | Suggests chart types, layout, filters for interactive dashboard              |
-| **Insight Agent**    | Converts statistical output into textual insights                              |
-| **Chat Agent**       | Handles user queries about insights and dashboard visualizations              |
+**Pipeline:**
 
-> **Note:** All agents are logical roles powered by **one SLM** through LangChain prompt engineering. Backend executes all actual data operations.
-```
+1. **CSV Upload → Backend API**
+2. **Dataset Stored** in Supabase/PostgreSQL
+3. **Orchestrator Agent** receives user prompt (e.g., "Analyze dataset for insights")
+4. **Agent Roles:**
+   - **Data Agent:** Preprocessing decisions  
+   - **EDA Agent:** Compute stats, correlations, anomaly hints  
+   - **Visualization Agent:** Suggest chart types & layout  
+   - **Insight Agent:** Generate textual explanations  
+5. **Processed Data & Insights Stored** in DB
+6. **Streamlit Dashboard** renders clickable charts & filters
+7. **Chat Interface** answers questions using insights and dashboard config
+
+**Timeline (1 week MVP):**
+
+| Day | Tasks |
+|-----|-------|
+| Day 1 | Repo setup, Supabase & FastAPI setup |
+| Day 2 | CSV upload API, dataset storage |
+| Day 3 | Preprocessing agent & backend pipeline |
+| Day 4 | EDA agent + text insight generation |
+| Day 5 | Visualization agent, dashboard creation |
+| Day 6 | Orchestrator + Chat integration |
+| Day 7 | Testing, polishing, demo workflow |
+
 ---
 
 ## 🛠️ Tech Stack
 
-- **LLM / Agents:** Mistral 7B (local, fast, open-source), LangChain, Pydantic  
-- **Backend:** FastAPI, Pandas / Polars, Supabase (Postgres + Storage)  
-- **Frontend / Dashboard:** Streamlit + Plotly, Streamlit Chat / Gradio  
-- **Async / Orchestration:** FastAPI BackgroundTasks or Celery (optional)  
-- **Version Control:** Git + GitHub  
+| Layer | Technology |
+|-------|------------|
+| **LLM / Agents** | Mistral 7B (local, fast, open-source), LangChain, Pydantic |
+| **Backend** | FastAPI, Supabase (Postgres + Storage), Pandas/Polars, Celery / BackgroundTasks |
+| **Frontend** | Streamlit, Plotly, Streamlit Chat / Gradio |
+| **Deployment** | Docker (optional), Windows/Linux compatible |
 
 ---
 
-## 📁 Repository Structure
+## 🧩 Agentic System (Single LLM)
+
+**Roles managed by one LLM via prompt engineering:**
+
+- **Orchestrator:** Routes tasks based on user prompts  
+- **Data Agent:** Cleans & preprocesses data  
+- **EDA Agent:** Computes stats & trends  
+- **Visualization Agent:** Chooses charts & layouts  
+- **Insight Agent:** Converts analysis to textual insights  
+- **Chat Agent:** Handles user queries in natural language  
+
+> LLM handles reasoning and task routing; actual computation is executed by backend code for efficiency.
+
+---
+
+## 📁 GitHub Repo Structure
 ```bash
-intelliviz-core/
+intelliviz/
 │
 ├── backend/
 │ ├── app/
-│ │ ├── api/
-│ │ │ ├── upload.py
-│ │ │ ├── query.py
-│ │ │ ├── chat.py
-│ │ ├── core/
-│ │ │ ├── config.py
-│ │ │ ├── database.py
-│ │ ├── preprocessing/
-│ │ │ └── preprocess.py
-│ │ ├── eda/
-│ │ │ └── eda.py
-│ │ ├── visualization/
-│ │ │ └── chart_builder.py
-│ │ ├── agents/
-│ │ │ ├── orchestrator.py
-│ │ │ ├── data_agent.py
-│ │ │ ├── eda_agent.py
-│ │ │ ├── viz_agent.py
-│ │ │ ├── insight_agent.py
-│ │ │ └── chat_agent.py
-│ ├── main.py
+│ │ ├── api/ # CSV upload, query, chat endpoints
+│ │ ├── preprocessing/ # Preprocessing scripts
+│ │ ├── eda/ # EDA computation
+│ │ ├── visualization/ # Plotly chart generation
+│ │ ├── agents/ # Orchestrator + agent prompts
+│ │ ├── core/ # Config, database connection
+│ │ ├── models/ # Optional ML models
+│ │ ├── main.py # FastAPI entrypoint
 │
 ├── frontend/
-│ ├── dashboard/
-│ ├── chat_ui/
+│ ├── dashboard/ # Streamlit dashboard components
+│ ├── chat_ui/ # Chat interface
 │
 ├── llm/
-│ ├── prompts/
-│ │ ├── orchestrator.txt
-│ │ ├── data_agent.txt
-│ │ ├── eda_agent.txt
-│ │ ├── viz_agent.txt
-│ │ └── insight_agent.txt
+│ ├── prompts/ # Prompt templates for agents
 │
 ├── data/
-│ ├── raw/
-│ ├── processed/
+│ ├── raw/ # Uploaded CSVs
+│ ├── processed/ # Preprocessed datasets
 │
 ├── docker/
 ├── requirements.txt
@@ -144,55 +112,39 @@ intelliviz-core/
 ```
 ---
 
-## ⚡ Phase A Step-by-Step Execution Plan (1 Week)
+## 🚀 How to Run Locally
 
-| Day | Tasks |
-|-----|-------|
-| **Day 1** | Repo setup, install Mistral 7B, setup Supabase, FastAPI boilerplate |
-| **Day 2** | CSV upload API, store full dataset in Supabase, test read/write |
-| **Day 3** | Implement Data Agent: preprocessing pipeline (missing values, normalization) |
-| **Day 4** | Implement EDA Agent: compute summary stats, correlations, anomalies |
-| **Day 5** | Implement Visualization Agent: chart config generation, Streamlit dashboard setup |
-| **Day 6** | Orchestrator agent + Chat Agent: route tasks, handle queries, answer questions |
-| **Day 7** | Testing, debugging, end-to-end workflow demo, README polish |
+1. Clone the repo:
+```bash
+git clone https://github.com/YourUsername/intelliviz.git
+cd intelliviz
+Install dependencies:
 
----
+pip install -r requirements.txt
+Start FastAPI backend:
 
-## 📌 Key Notes for Team
+uvicorn backend.app.main:app --reload
+Start Streamlit frontend:
 
-1. **Single LLM = one brain** → roles handled via prompt engineering  
-2. **Backend executes actual data ops** → LLM only decides what to do  
-3. **Store full datasets in Supabase** → raw + processed + insights  
-4. **Dashboard is fully clickable + filterable** → Plotly + Streamlit  
-5. **Phase A MVP** is commercial-grade but simplified → later can scale with multiple LLMs, Kafka streaming, additional modules  
+streamlit run frontend/dashboard/main.py
+Upload CSV → View insights → Ask questions in chat → Interact with dashboard
 
----
+👥 Collaboration
+Supervisor: Dr. Hina Ali
 
-## 📝 Future Extensions (Beyond Phase A)
+Team Members: Afnan Shoukat, Usama Shahid, Dure Addan Noor
 
-- Real-time streaming datasets (IoT / sensor data)  
-- Cybersecurity anomaly detection module  
-- Multi-agent system with separate LLMs  
-- Advanced dashboards (React + Plotly.js)  
-- Cloud deployment (Docker + Kubernetes + Supabase / S3)  
-- User authentication and role management  
+🔮 Future Work
+Add IoT & real-time monitoring module (Phase B)
 
----
+Integrate multi-LLM orchestration for larger datasets
 
-## 🔗 Demo / References
+Expand dashboard to multi-user SaaS platform
 
-- Mistral 7B: [https://huggingface.co/mistralai/Mistral-7B-Instruct](https://huggingface.co/mistralai/Mistral-7B-Instruct)  
-- LangChain Agents: [https://www.langchain.com](https://www.langchain.com)  
-- Supabase Docs: [https://supabase.com/docs](https://supabase.com/docs)  
-- Streamlit Docs: [https://docs.streamlit.io](https://docs.streamlit.io)  
-- Plotly Docs: [https://plotly.com/python/](https://plotly.com/python/)  
+Add predictive maintenance & cybersecurity insights
+
+📄 License
+MIT License
+
 
 ---
-
-**Phase A**: This README and repo layout covers **all aspects** to get your team coding immediately.  
-
----
-
-If you want, I can also **draw a clear visual architecture diagram** with **user → DB → SLM → dashboard → chat** for the README, which will make it very easy to explain to your team and supervisors.  
-
-Do you want me to make that diagram next?
