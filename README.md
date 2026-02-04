@@ -8,7 +8,6 @@
 ![LangChain](https://img.shields.io/badge/LangChain-✓-purple?style=for-the-badge) 
 ![Supabase](https://img.shields.io/badge/Supabase-✓-green?style=for-the-badge) 
 ![Streamlit](https://img.shields.io/badge/Streamlit-✓-red?style=for-the-badge) 
-![MIT License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 ---
 
