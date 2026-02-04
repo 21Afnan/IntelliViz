@@ -1,4 +1,3 @@
-
 # IntelliViz 🚀  
 **Autonomous Data Analytics & IoT Anomaly Detection Platform**
 
