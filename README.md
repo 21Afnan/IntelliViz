@@ -1,32 +1,28 @@
+
 # IntelliViz 🚀  
-**Autonomous AI-Powered Analytics & Real-Time IoT Monitoring**
+**Autonomous Data Analytics & IoT Anomaly Detection Platform**
 
-![IntelliViz Banner](https://media.giphy.com/media/l41lFw057lAJQMwg0/giphy.gif)
-
----
-
-![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
-![PyTorch](https://img.shields.io/badge/PyTorch-✓-orange?style=for-the-badge&logo=pytorch)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-✓-orange?style=for-the-badge&logo=tensorflow)
-![LangChain](https://img.shields.io/badge/LangChain-✓-purple?style=for-the-badge)
-![Supabase](https://img.shields.io/badge/Supabase-✓-green?style=for-the-badge)
-![Streamlit](https://img.shields.io/badge/Streamlit-✓-red?style=for-the-badge)
-![AI](https://img.shields.io/badge/AI-Powered-blue?style=for-the-badge&logo=artificial-intelligence)
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge) 
+![PyTorch](https://img.shields.io/badge/PyTorch-✓-orange?style=for-the-badge) 
+![TensorFlow](https://img.shields.io/badge/TensorFlow-✓-orange?style=for-the-badge) 
+![LangChain](https://img.shields.io/badge/LangChain-✓-purple?style=for-the-badge) 
+![Supabase](https://img.shields.io/badge/Supabase-✓-green?style=for-the-badge) 
+![Streamlit](https://img.shields.io/badge/Streamlit-✓-red?style=for-the-badge) 
 
 ---
 
 ## 🌟 Project Overview
-IntelliViz is an **agentic, AI-powered analytics platform** that combines **general dataset analytics** and **real-time IoT monitoring** into a single autonomous system.  
+IntelliViz is an **agentic, AI-powered analytics platform** combining:  
 
-**Key Highlights:**
-- ⚡ **Real-time IoT & sensor monitoring** for operational and cybersecurity anomalies.  
-- 🤖 **SLM-based analytics module** for automated insights, dashboards, and trend analysis.  
-- 💬 **Chatbot interface via LangChain** for natural language queries and actionable insights.  
-- ☁️ **Supabase cloud backend** for secure data storage, logs, dashboards, and alerts.  
+1. **SLM-Based General Analytics Module** – autonomously analyze **any dataset** (CSV, Excel, JSON, SQL).  
+2. **IoT Monitoring & Cybersecurity Module** – monitor sensors, devices, and networks in **real-time**.  
+3. **LangChain Agentic AI** – interact via **chatbot interface** for queries, insights, and automation.  
+4. **Supabase Backend** – secure, cloud-hosted database for logs, dashboards, and alerts.  
 
-> IntelliViz enables **autonomous decision-making**, predictive alerts, and interactive visualizations, making IoT and data analytics **smarter and faster**.
+Users can **visualize insights, detect anomalies, and receive predictive alerts** with minimal human intervention.
 
 ---
+
 <p align="center">
   <img src="https://media.giphy.com/media/l41lFw057lAJQMwg0/giphy.gif" width="700" alt="Interactive Analytics Dashboard"/>
 </p>
