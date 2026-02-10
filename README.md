@@ -62,6 +62,8 @@ Users can **visualize insights, detect anomalies, and receive predictive alerts*
 
 
 graph TD
+
+
     A[IoT Devices 🌐] --> F[IoT Monitoring Module 🔒]
     F --> G[Anomaly Detection ⚠️]
     F --> H[Root Cause Analysis 🧩]
