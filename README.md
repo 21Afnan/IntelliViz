@@ -62,14 +62,17 @@ Users can **visualize insights, detect anomalies, and receive predictive alerts*
 
 
 graph TD
-    A[Datasets (CSV, Excel, JSON, SQL)] --> B[SLM-Based Analytics Module]
-    B --> C[EDA & Insights]
-    B --> D[Visualization & Dashboards]
+    A[IoT Devices 🌐] --> F[IoT Monitoring Module 🔒]
+    F --> G[Anomaly Detection ⚠️]
+    F --> H[Root Cause Analysis 🧩]
+    G --> I[Alerts & Notifications 📣]
 
-    E[IoT Devices / Network] --> F[IoT Monitoring Module]
-    F --> G[Anomaly Detection]
-    F --> H[Root Cause Analysis]
-    G --> I[Alerts & Notifications]
+    B[Datasets (CSV, Excel, JSON, SQL) 🗃️] --> C[SLM-Based Analytics Module 🧠]
+    C --> D[EDA & Insights 📊]
+    C --> E[Visualization & Dashboards 🖥️]
+
+    C --> J[Chatbot Interface 💬]
+    F --> J
 
 
 
