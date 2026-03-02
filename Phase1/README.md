@@ -1,6 +1,6 @@
-# Phase 1 - Module 2: Industrial Energy & Cyber Intelligence Backend
+# Backend Module: Industrial Energy & Cyber Intelligence
 
-Welcome to **Phase 1 - Module 2** of our Industrial Energy & Cyber Intelligence Platform! This module is focused on **Backend Development** for anomaly detection, root cause analysis, and chatbot integration using **FastAPI** and **Docker**.
+Welcome to **Backend Module** of our Industrial Energy & Cyber Intelligence Platform! This module is focused on **Backend Development** for anomaly detection, root cause analysis, and chatbot integration using **FastAPI** and **Docker**.
 
 ---
 
@@ -104,7 +104,7 @@ POST /chatbot/query
 
 ---
 
-## 🎯 Goals for Phase 1
+## 🎯 Goals for Backend Module
 1. Real-time anomaly detection for energy, machine, and cyber modules
 2. Root cause analysis integrated into API responses
 3. Chatbot query system that aggregates anomalies
@@ -122,8 +122,4 @@ POST /chatbot/query
 ## 📚 References
 1. Steel Industry Energy Dataset - [Kaggle](https://www.kaggle.com/datasets/csafrit2/steel-industry-energy-consumption) | [UCI Mirror](https://archive.ics.uci.edu/dataset/851/steel%2B)
 2. Industrial IoT Fault Detection Dataset - [Kaggle](https://www.kaggle.com/datasets/ziya07/industrial-iot-fault-detection-dataset/data?utm_source=chatgpt.com)
-3. SWaT ICS Dataset - [Kaggle](https://www.kaggle.com/datasets/vishala28/swat-dataset-secure-water-treatment-system?utm_source=chatgpt.com)
-
----
-
-> 💬 This README is designed for Phase 1, Module 2 of the project. Follow this structure for scalable development and smooth integration with frontend and other backend services.
+3. SWaT ICS Dataset - [Kaggle](https://www.kaggle.com/datasets/vishala28/swat-dataset-se
