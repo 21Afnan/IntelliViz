@@ -91,19 +91,19 @@ def main():
 
     # Load scaler
     scaler = joblib.load(SCALER_PATH)
-    print("✅ Scaler loaded.")
+    print(" Scaler loaded.")
 
     # Dataset & Dataloader
     dataset = SWaTDatasetTest(FILE_PATH, scaler, window_size=WINDOW_SIZE)
     dataloader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=False)
-    print(f"✅ Test dataset loaded. {len(dataset)} sequences.")
+    print(f" Test dataset loaded. {len(dataset)} sequences.")
 
     # Model
     input_size = dataset[0].shape[1]
     model = LSTMAutoencoder(input_size=input_size, hidden_size=HIDDEN_SIZE).to(DEVICE)
     model.load_state_dict(torch.load(MODEL_PATH, map_location=DEVICE))
     model.eval()
-    print("✅ Model loaded.")
+    print(" Model loaded.")
 
     # Evaluate reconstruction errors
     criterion = nn.MSELoss(reduction='none')
@@ -117,7 +117,7 @@ def main():
             errors.extend(batch_error)
 
     errors = np.array(errors)
-    print(f"✅ Testing completed. Mean reconstruction error: {errors.mean():.6f}")
+    print(f" Testing completed. Mean reconstruction error: {errors.mean():.6f}")
 
     # -----------------------------
     # Detect anomalies using percentile
