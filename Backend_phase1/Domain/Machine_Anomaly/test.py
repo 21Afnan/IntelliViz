@@ -11,7 +11,6 @@ import matplotlib.pyplot as plt
 
 # CONFIG
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-TEST_CSV = os.path.join(BASE_DIR, "ai4i2020.csv")  
 MODEL_PATH = os.path.join(BASE_DIR, "lstm_classifier.pth")
 SCALER_PATH = os.path.join(BASE_DIR, "scaler.save")
 CM_PATH = os.path.join(BASE_DIR, "confusion_matrix_test.png")
@@ -61,7 +60,7 @@ def main():
     scaler = joblib.load(SCALER_PATH)
     print("Scaler loaded.")
     
-    test_ds = TestDataset(TEST_CSV, scaler)
+    test_ds = TestDataset("ai4i2020.csv", scaler)
     test_loader = DataLoader(test_ds, batch_size=BATCH_SIZE, shuffle=False)
     
     model = LSTMClassifier(input_size=len(FEATURES)).to(device)
