@@ -69,6 +69,7 @@ IntelliViz strictly follows **Onion Architecture**, ensuring separation of conce
 ---
 
 ## 🤖 Agentic Workflow
+```bash
 ---
 User Query
 │
@@ -89,7 +90,7 @@ Response Composer
 ▼
 User Output (Charts + Insights + Answers)
 
-
+```
 ---
 ---
 
@@ -212,4 +213,4 @@ Predictive analytics
 
 Business intelligence automation
 
-<p align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer"/> </p> ```
+<p align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer"/> </p> 
