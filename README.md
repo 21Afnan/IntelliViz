@@ -1,5 +1,5 @@
 
-# IntelliViz 🚀  
+# IntelliViz🚀  
 **Autonomous Data Analytics & IoT Anomaly Detection Platform**
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge) 
@@ -11,7 +11,7 @@
 
 ---
 
-## 🌟 Project Overview
+## 🌟 Project Overview:
 IntelliViz is an **agentic, AI-powered analytics platform** combining:  
 
 1. **SLM-Based General Analytics Module** – autonomously analyze **any dataset** (CSV, Excel, JSON, SQL).  
