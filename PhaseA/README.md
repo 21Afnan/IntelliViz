@@ -157,7 +157,7 @@ IntelliViz/
 ---
 
 ## 🗺 Development Roadmap (1-Week Sprint)
-```bash
+---
 | Day | Goal |
 |----|------|
 | Day 1 | Project setup + Onion structure |
@@ -167,7 +167,7 @@ IntelliViz/
 | Day 5 | FastAPI endpoints |
 | Day 6 | Streamlit dashboard |
 | Day 7 | Testing + polishing + deployment |
-```
+
 ---
 
 ## 💬 Example User Queries
