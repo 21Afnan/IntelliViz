@@ -33,8 +33,9 @@ The system autonomously performs:
 ---
 
 ## 🧠 Onion Architecture
-```bash
+
 IntelliViz strictly follows **Onion Architecture**, ensuring separation of concerns, testability, and scalability.
+```bash
             ┌──────────────────────────┐
             │      Presentation        │
             │   (FastAPI / Schemas)   │
