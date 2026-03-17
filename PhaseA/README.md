@@ -57,7 +57,7 @@ IntelliViz strictly follows **Onion Architecture**, ensuring separation of conce
 
             
 ### Layer Responsibilities
-```bash
+---
 | Layer | Description |
 |------|-------------|
 | **Domain** | Core business logic, statistical rules, insight generation |
@@ -65,7 +65,7 @@ IntelliViz strictly follows **Onion Architecture**, ensuring separation of conce
 | **Infrastructure** | External integrations (LLM, Pandas, Matplotlib, storage) |
 | **Presentation** | API endpoints and request/response schemas |
 | **Frontend** | Streamlit-based interactive dashboard |
-```
+
 ---
 
 ## 🤖 Agentic Workflow
