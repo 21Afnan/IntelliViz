@@ -120,6 +120,7 @@ User Output (Charts + Insights + Answers)
 ---
 
 ## 📁 Repository Structure
+```bash 
 IntelliViz/
 │
 ├── domain/
@@ -149,12 +150,12 @@ IntelliViz/
 ├── tests/
 ├── requirements.txt
 └── README.md
-
+```
 
 ---
 
 ## 🗺 Development Roadmap (1-Week Sprint)
-
+```bash
 | Day | Goal |
 |----|------|
 | Day 1 | Project setup + Onion structure |
@@ -164,7 +165,7 @@ IntelliViz/
 | Day 5 | FastAPI endpoints |
 | Day 6 | Streamlit dashboard |
 | Day 7 | Testing + polishing + deployment |
-
+```
 ---
 
 ## 💬 Example User Queries
@@ -190,6 +191,7 @@ pip install -r requirements.txt
 uvicorn presentation.api.main:app --reload
 4. Run Frontend
 streamlit run frontend/streamlit_app.py
+```
 🌍 Project Vision
 
 IntelliViz aims to redefine how humans interact with data.
