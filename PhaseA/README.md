@@ -1,156 +1,213 @@
-<!-- ================== INTELLIVIZ — PHASE A ================== -->
-
-<!-- HERO HEADER -->
 <p align="center">
-  <img
-    src="https://capsule-render.vercel.app/api?type=waving&height=220&section=header&text=IntelliViz%20Phase%20A&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&color=FF69B4"
-    width="100%"
-  />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=IntelliViz&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=35"/>
 </p>
 
-<!-- BADGES -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Phase-A-FF69B4?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Architecture-Agentic-FF77A9?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/LLM-Single%20Brain-FFA6C9?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Status-Building-FFD6E5?style=for-the-badge" />
+  <b>AI-Powered Agentic Data Analysis Platform</b><br>
+  Conversational analytics that thinks like a data analyst.
 </p>
 
-<!-- DIVIDER -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=FF69B4" width="100%" />
-</p>
-
-## 🚀 What is IntelliViz?
-
-**IntelliViz (Phase A)** is an **agentic data analysis platform**.
-
-You upload a CSV.  
-A **single LLM thinks like a team**.
-
-It decides:
-- *How to clean the data*
-- *What statistics matter*
-- *Which charts explain the story*
-- *What insights a human would care about*
-
-<p align="center">
-✨ <b>LLM reasons → Backend executes → Dashboard communicates</b> ✨
+  <img src="https://img.shields.io/badge/Architecture-Onion-blueviolet?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Backend-FastAPI-009688?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Frontend-Streamlit-FF4B4B?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/AI-LLM--Orchestrated-black?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Data-Pandas-yellow?style=for-the-badge"/>
 </p>
 
 ---
 
-## 🧠 Agentic System (Visual Mental Model)
-```bash
-User Intent
-    ↓
-🧠 Orchestrator (thinking…)
-    ↓
-[ 🧹 Data ] → [ 📊 EDA ] → [ 📈 Viz ] → [ 💡 Insight ]
-    ↓
-⚙️ Backend Execution
-    ↓
-📊 Dashboard + 💬 Chat
+## 🚀 Project Overview
 
----
-```
-## 🤖 Agents in Action
-```bash
+**IntelliViz** is an AI-driven, agentic data analytics platform designed to transform raw CSV datasets into meaningful insights through a single orchestrating Large Language Model (LLM).
 
-<
+Users interact with IntelliViz conversationally — asking questions, requesting visualizations, and receiving intelligent insights — just like working with a professional data analyst.
 
-| Agent | Animation | Responsibility |
-|------|-----------|----------------|
-| 🧭 Orchestrator | 🔁 Thinking | Routes tasks & intent |
-| 🧹 Data Agent | 🧼 Cleaning | Missing values, scaling |
-| 📊 EDA Agent | 📐 Measuring | Stats, correlations |
-| 📈 Viz Agent | 🎨 Designing | Chart selection |
-| 💡 Insight Agent | 💭 Explaining | Human-readable insights |
-| 💬 Chat Agent | 🗣️ Conversing | Answers questions |
-
-
-
----
-```
-## 🔄 End-to-End Flow (Animated Concept)
-
-1️⃣ Upload CSV  
-2️⃣ LLM reasons about the dataset  
-3️⃣ Backend executes transformations  
-4️⃣ Charts & insights are generated  
-5️⃣ Chat explores the results  
+The system autonomously performs:
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Statistical Reasoning
+- Visualization Generation
+- Insight Extraction
 
 ---
 
-## 🧰 Tech Stack
+## 🧠 Onion Architecture
+
+IntelliViz strictly follows **Onion Architecture**, ensuring separation of concerns, testability, and scalability.
+            ┌──────────────────────────┐
+            │      Presentation        │
+            │   (FastAPI / Schemas)   │
+            └──────────▲──────────────┘
+                       │
+            ┌──────────┴──────────────┐
+            │       Application       │
+            │ (Agents / Workflows)    │
+            └──────────▲──────────────┘
+                       │
+            ┌──────────┴──────────────┐
+            │        Domain           │
+            │ (Entities / Logic)      │
+            └──────────▲──────────────┘
+                       │
+            ┌──────────┴──────────────┐
+            │     Infrastructure      │
+            │ (LLM / Pandas / DB)     │
+            └─────────────────────────┘
+
+            
+### Layer Responsibilities
+
+| Layer | Description |
+|------|-------------|
+| **Domain** | Core business logic, statistical rules, insight generation |
+| **Application** | Agent orchestration, workflows, use-case services |
+| **Infrastructure** | External integrations (LLM, Pandas, Matplotlib, storage) |
+| **Presentation** | API endpoints and request/response schemas |
+| **Frontend** | Streamlit-based interactive dashboard |
+
+---
+
+## 🤖 Agentic Workflow
+---
+User Query
+│
+▼
+LLM Orchestrator Agent
+│
+├──► Data Cleaning Agent
+│
+├──► EDA Agent
+│
+├──► Visualization Agent
+│
+├──► Insight Generation Agent
+│
+▼
+Response Composer
+│
+▼
+User Output (Charts + Insights + Answers)
+
+
+---
+---
+
+## 🧩 Agent Responsibilities
+
+| Agent | Responsibility |
+|------|----------------|
+| **Orchestrator Agent** | Understands user intent and routes tasks |
+| **Data Cleaning Agent** | Handles missing values, formatting, normalization |
+| **EDA Agent** | Performs statistical summaries and distributions |
+| **Visualization Agent** | Generates charts (bar, line, heatmap, etc.) |
+| **Insight Agent** | Extracts actionable insights and trends |
+| **Response Agent** | Converts results into human-like explanations |
+
+---
+
+## 🛠 Tech Stack
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Mistral%207B-FF5C8A?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/FastAPI-FF77A9?style=for-the-badge&logo=fastapi&logoColor=white" />
-  <img src="https://img.shields.io/badge/LangChain-FFA6C9?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Supabase-FFD6E5?style=for-the-badge&logo=supabase&logoColor=white" />
-  <img src="https://img.shields.io/badge/Streamlit-FF9DBD?style=for-the-badge&logo=streamlit&logoColor=white" />
-  <img src="https://img.shields.io/badge/Plotly-FFB7D1?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Python-3.10+-blue?style=flat-square"/>
+  <img src="https://img.shields.io/badge/FastAPI-Backend-009688?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Streamlit-Frontend-FF4B4B?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Pandas-Data-yellow?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Matplotlib-Visualization-orange?style=flat-square"/>
+  <img src="https://img.shields.io/badge/LLM-OpenAI/GPT-black?style=flat-square"/>
 </p>
 
 ---
 
 ## 📁 Repository Structure
-```bash
-intelliviz-core/
+IntelliViz/
 │
-├── backend/
-│ ├── app/
-│ │ ├── api/ # Upload, query, chat
-│ │ ├── agents/ # Orchestrator + roles
-│ │ ├── preprocessing/ # Data cleaning
-│ │ ├── eda/ # Statistics
-│ │ ├── visualization/ # Charts
-│ │ └── main.py
+├── domain/
+│ ├── entities/
+│ ├── rules/
+│ └── insights/
+│
+├── application/
+│ ├── agents/
+│ ├── services/
+│ └── workflows/
+│
+├── infrastructure/
+│ ├── llm/
+│ ├── data_processing/
+│ ├── visualization/
+│ └── repositories/
+│
+├── presentation/
+│ ├── api/
+│ ├── routes/
+│ └── schemas/
 │
 ├── frontend/
 │ └── streamlit_app.py
 │
-├── llm/prompts/
-├── docker/
+├── tests/
+├── requirements.txt
 └── README.md
 
-```
----
-
-## 🧪 Try It Like a User
-
-💬 Ask things like:
-- *“What stands out in this dataset?”*
-- *“Are there anomalies?”*
-- *“Which features matter most?”*
-
-The system **answers like an analyst**, not a chatbot.
 
 ---
 
-## 🗓️ Phase A — 1 Week Sprint
+## 🗺 Development Roadmap (1-Week Sprint)
 
-| Day | Focus |
+| Day | Goal |
 |----|------|
-| 1 | Infra + LLM |
-| 2 | CSV upload |
-| 3 | Data agent |
-| 4 | EDA + insights |
-| 5 | Visuals |
-| 6 | Orchestrator + chat |
-| 7 | Demo polish |
+| Day 1 | Project setup + Onion structure |
+| Day 2 | Domain layer (entities + rules) |
+| Day 3 | Infrastructure (Pandas + LLM integration) |
+| Day 4 | Application layer (agent orchestration) |
+| Day 5 | FastAPI endpoints |
+| Day 6 | Streamlit dashboard |
+| Day 7 | Testing + polishing + deployment |
 
 ---
 
-<p align="center">
-💗 <b>Agentic by design. Minimal by necessity. Built to scale.</b>
-</p>
+## 💬 Example User Queries
 
-<!-- FOOTER -->
-<p align="center">
-  <img
-    src="https://capsule-render.vercel.app/api?type=waving&height=140&section=footer&color=FF69B4"
-    width="100%"
-  />
-</p>
+- "Show sales trends over time"
+- "Find correlations between price and demand"
+- "Which region performed best last quarter?"
+- "Clean this dataset and summarize key insights"
+- "Generate a heatmap of feature relationships"
+- "What anomalies exist in this data?"
+
+---
+
+## ⚙️ Running Instructions
+
+### 1. Clone Repository
+```bash
+git clone https://github.com/yourusername/IntelliViz.git
+cd IntelliViz
+2. Install Dependencies
+pip install -r requirements.txt
+3. Run Backend
+uvicorn presentation.api.main:app --reload
+4. Run Frontend
+streamlit run frontend/streamlit_app.py
+🌍 Project Vision
+
+IntelliViz aims to redefine how humans interact with data.
+
+Instead of dashboards requiring manual interpretation, IntelliViz enables:
+
+Natural language interaction
+
+Autonomous analytical reasoning
+
+Real-time intelligent insights
+
+The long-term vision is to evolve IntelliViz into a fully autonomous AI data analyst, capable of:
+
+Decision support
+
+Predictive analytics
+
+Business intelligence automation
+
+<p align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer"/> </p> ```
